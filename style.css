@@ -1,0 +1,190 @@
+/* DESKTOP & IPAD PRO sizes */
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 36pt;
+}
+
+p, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    color:#8f0f4d;
+    margin-top: 4px;
+}
+
+.header {
+    background-image: url("./icecream5-opacity83.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: 900px;
+    height: 830px;
+}
+
+.headerBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header img {
+    margin: 20px;
+    height: 80px;
+}
+
+#hamburger {
+    height: 40px;
+}
+
+#infoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    padding: 30px;
+}
+
+#textBox {
+    width: 500px;
+    text-align: center;
+}
+
+
+.productContainer {
+    height: 720px;
+    background-color: #fae9f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product {
+    height: 480px;
+    width: 320px;
+}
+
+#product1box {
+    margin: 40px;
+}
+
+#product2box {
+    margin: 40px;
+}
+
+#product1 {
+    background-image: url("./icecream1.jpg");
+    background-size: cover;
+}
+
+#product2 {
+    background-image: url("./icecream2.jpg");
+    background-size: cover;
+}
+
+#tivoli {
+    background-image: url("./tivoli1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 240px;
+}
+
+#map {
+    height: 660px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+#map img {
+    width: 30rem;
+    border-radius: 2%;
+}
+
+#contactBox {
+    margin-top: 70px;
+}
+
+#footer {
+    height: 50px;
+    border-top: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    height: 20px;
+    margin: 5px;
+}
+
+/* IPAD & PHONE sizes */
+
+@media screen and (max-width: 1200px) {
+    #tivoli {
+        background-position: -200px;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    #tivoli {
+        background-position: -400px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .productContainer {
+        display: flex;
+        flex-direction: column;
+        height: 1220px;
+    }
+    #product1box {
+        margin: 0px;
+    }
+    #product2box {
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #map img {
+        width: 20rem;
+    }
+    #tivoli {
+        background-position: -500px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    #tivoli {
+        background-position: -700px;
+    }
+    .header {
+        background-position: center;
+      }
+}
+
+@media screen and (max-width: 325px) {
+    .product {
+        height: 430px;
+        width: 270px;
+    }
+    #hamburger {
+        display: none;
+    }
+    #map img {
+        width: 14rem;
+    }
+    .headerBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
